@@ -117,11 +117,10 @@
 		0C9280682C025A3600C2D6F1 /* FoodRecipe */ = {
 			isa = PBXGroup;
 			children = (
+				0CBD15DA2C5E720F00A2045C /* Models */,
 				0C92807D2C0271ED00C2D6F1 /* Views */,
 				0C92806D2C025A3700C2D6F1 /* Assets.xcassets */,
 				0C92806F2C025A3700C2D6F1 /* Preview Content */,
-				0CBBD7452C05F13C009612BC /* RecipeComment.swift */,
-				0CD4D4D42C073AAF00CBC3B8 /* Recipe.swift */,
 			);
 			path = FoodRecipe;
 			sourceTree = "<group>";
@@ -156,6 +155,15 @@
 				0C2CF7B52C0A035100FAE261 /* Cards */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0CBD15DA2C5E720F00A2045C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0CD4D4D42C073AAF00CBC3B8 /* Recipe.swift */,
+				0CBBD7452C05F13C009612BC /* RecipeComment.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

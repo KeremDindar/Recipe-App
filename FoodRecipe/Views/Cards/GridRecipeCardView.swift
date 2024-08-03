@@ -54,6 +54,7 @@ struct GridRecipeCardView: View {
 }
 
 #Preview {
-    GridRecipeCardView(recipe:Recipe(image: "food1", title: "asdasd", chef: Chef(name: "asdas", image: "food1", location: "asdad"), rating: 4, createdAt: .now, category: "asd", isPopular: false, prepareTime: 20, ingridents: [Ingrident(image: "food1", name: "asdasd", amount: 300)], procedures: [Procedure(description: "adasd")], comment: "znfkajsfnkajsfbnkjasfhkajsfasjkf"))
+    GridRecipeCardView(recipe:Recipe(image: "food1", title: "Traditional Spare Ribs Baked", chef: Chef(name: "Laura Wilso", image: "food1", location: "Los Angeles, CA"), rating: 4, createdAt: .now, category: "Cereal", isPopular: false, prepareTime: 20, ingridents: [Ingrident(image: "food1", name: "Strawberries", amount: 300)], procedures: [Procedure(description: "Serve immediately and enjoy!")], comment: "A delicious and refreshing smoothie perfect for breakfast or a snack"))
 
 }
+

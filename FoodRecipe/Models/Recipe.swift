@@ -52,31 +52,6 @@ struct Chef: Identifiable {
 }
 
 
-
-
-//let recipes = [
-//    Recipe(image: "food1", title: "Traditional spare ribs baked", chef: Chef.init(name: "Laura wilson", image: "food1", location: "asdasd"), rating: 3, createdAt: .now, category: "Cereal", isPopular: true, prepareTime: 20, ingridents: [Ingrident(image: "food1", name: "asdasd", amount: 300),Ingrident(image: "food1", name: "asdas", amount: 300),Ingrident(image: "food1", name: "asdasd", amount: 300),Ingrident(image: "food1", name: "adsasd", amount: 300),Ingrident(image: "food1", name: "asdas", amount: 300)], procedures: [Procedure(description: "asdasafkhdsöfgnsdjgnsdjkgnsdkgdasd"),Procedure(description: "asdasafkhdsöfgnsdjgnsdjkgnsdkgdasd")], comment: "znfkajsfnkajsfbnkjasfhkajsfasjkf"),
-//    
-//    Recipe(image: "food2", title: "Lamb chops with fruity couscous and mint", chef: Chef.init(name: "Laura wilson", image: "food1", location: "asdasd"), rating: 3, createdAt: .now, category: "Cereal", isPopular: true, prepareTime: 20, ingridents: [Ingrident(image: "food1", name: "asdasd", amount: 300),Ingrident(image: "food1", name: "asdas", amount: 300),Ingrident(image: "food1", name: "asdasd", amount: 300),Ingrident(image: "food1", name: "adsasd", amount: 300),Ingrident(image: "food1", name: "asdas", amount: 300)], procedures: [Procedure(description: "dsklgnsdömgnvlksdnvlksdjgnlksdgjnklsdjglksdjg")], comment: "znfkajsfnkajsfbnkjasfhkajsfasjkf"),
-//
-//    Recipe(image: "food3", title: "spice roasted chicken with flavored rice", chef: Chef.init(name: "Rock", image: "food1", location: "asdasd"), rating: 3, createdAt: .now, category: "Cereal", isPopular: false, prepareTime: 20, ingridents: [Ingrident(image: "food1", name: "asdasd", amount: 300),Ingrident(image: "food1", name: "asdas", amount: 300),Ingrident(image: "food1", name: "asdasd", amount: 300),Ingrident(image: "food1", name: "adsasd", amount: 300),Ingrident(image: "food1", name: "asdas", amount: 300)], procedures: [Procedure(description: "sdkgjsdklgjsdlkgmndskvnjdslkvhsdlkfgjhsdg")], comment: "znfkajsfnkajsfbnkjasfhkajsfasjkf"),
-//    
-//    Recipe(image: "food4", title: "Chinese style Egg fried rice with sliced pork fillet", chef: Chef.init(name: "Laura wilson", image: "food1", location: "asdasd"), rating: 3, createdAt: .now, category: "Fruit", isPopular: true, prepareTime: 20, ingridents: [Ingrident(image: "food1", name: "asdasd", amount: 300)], procedures: [Procedure(description: "lsdgjhfsdkljgjhsdlkgjklsdjgs")], comment: "znfkajsfnkajsfbnkjasfhkajsfasjkf"),
-//    
-//    Recipe(image: "food1", title: "asdasd", chef: Chef.init(name: "John", image: "food1", location: "asdasd"), rating: 3, createdAt: .now, category: "Spanish", isPopular: false, prepareTime: 20, ingridents: [Ingrident(image: "asdasd", name: "asdasd", amount: 300),Ingrident(image: "food1", name: "asdas", amount: 300),Ingrident(image: "food1", name: "asdasd", amount: 300),Ingrident(image: "food1", name: "adsasd", amount: 300),Ingrident(image: "food1", name: "asdas", amount: 300)], procedures: [Procedure(description: "sdgkjdslkgjsdlkgjsdlkghsdklgsd")], comment: "znfkajsfnkajsfbnkjasfhkajsfasjkf"),
-//    
-//    Recipe(image: "food2", title: "asdasd", chef: Chef.init(name: "Laura wilson", image: "food1", location: "asdasd"), rating: 3, createdAt: .now, category: "Spanish", isPopular: true, prepareTime: 20, ingridents: [Ingrident(image: "food1", name: "asdasd", amount: 300),Ingrident(image: "food1", name: "asdas", amount: 300),Ingrident(image: "food1", name: "asdasd", amount: 300),Ingrident(image: "food1", name: "adsasd", amount: 300),Ingrident(image: "food1", name: "asdas", amount: 300)], procedures: [Procedure(description: "sdjghsdljkvndklsjhflsdvnsdlkhjfglsdg")], comment: "znfkajsfnkajsfbnkjasfhkajsfasjkf"),
-//    
-//    Recipe(image: "food3", title: "asdasd", chef: Chef.init(name: "Laura wilson", image: "food1", location: "asdasd"), rating: 3, createdAt: .now, category: "Fruit", isPopular: false, prepareTime: 20, ingridents: [Ingrident(image: "food1", name: "asdasd", amount: 300),Ingrident(image: "food1", name: "asdas", amount: 300),Ingrident(image: "food1", name: "asdasd", amount: 300),Ingrident(image: "food1", name: "adsasd", amount: 300),Ingrident(image: "food1", name: "asdas", amount: 300)], procedures: [Procedure(description: "ldgnlsdjhglsdlksdvljkdahfjashfsajfhasf")], comment: "znfkajsfnkajsfbnkjasfhkajsfasjkf"),
-//    
-//    Recipe(image: "food4", title: "asdasd", chef: Chef.init(name: "Laura wilson", image: "food1", location: "asdasd"), rating: 3, createdAt: .now, category: "Cereal", isPopular: true, prepareTime: 20, ingridents: [Ingrident(image: "food1", name: "asdasd", amount: 300),Ingrident(image: "food1", name: "asdas", amount: 300),Ingrident(image: "food1", name: "asdasd", amount: 300),Ingrident(image: "food1", name: "adsasd", amount: 300),Ingrident(image: "food1", name: "asdas", amount: 300)], procedures: [Procedure(description: "lkdsgjskjdlghsamfnasjkfnasömghsdgdnsögjhsdkgbsdjkghsdgjsdkjghs"),Procedure(description: "jfhaskjfhsdkjgnsdnösdgjhsdvnsdjgkdgfhwoghsdo")], comment: "znfkajsfnkajsfbnkjasfhkajsfasjkf")
-//
-//
-//]
-
-
-
-
 let recipes = [
     Recipe(
         image: "food1",

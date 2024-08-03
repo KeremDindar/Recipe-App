@@ -72,5 +72,23 @@ struct ReviewView: View {
 }
 
 #Preview {
-    ReviewView(recipe: Recipe(image: "food1", title: "sdjghsdkj", chef: Chef(name: "asd", image: "food1", location: "sdkjhfsdkjgf"), rating: 3, createdAt: .now, category: "sdfasf", isPopular: true, prepareTime: 20000, ingridents: [Ingrident(image: "food1", name: "lsdhgkjsdg", amount: 200)], procedures: [Procedure(description: "asljfaslkf")], comment: "kdsbgjsdgbkjsdg"))
+    ReviewView(recipe: Recipe(
+            image: "food1",
+            title: "Traditional Spare Ribs Baked",
+            chef: Chef(name: "Laura Wilson", image: "food1", location: "Los Angeles, CA"),
+            rating: 4,
+            createdAt: .now,
+            category: "Cereal",
+            isPopular: true,
+            prepareTime: 20,
+            ingridents: [
+                Ingrident(image: "food1", name: "Strawberries", amount: 200),
+                Ingrident(image: "food2", name: "Milk", amount: 200)
+            ],
+            procedures: [
+                Procedure(description: "Combine all ingredients in a blender and blend until smooth."),
+                Procedure(description: "Serve immediately and enjoy!")
+            ],
+            comment: "A delicious and refreshing smoothie perfect for breakfast or a snack."
+        ))
 }

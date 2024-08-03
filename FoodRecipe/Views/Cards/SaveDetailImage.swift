@@ -58,7 +58,24 @@ struct SaveDetailImage: View {
 }
 
 #Preview {
-    SaveDetailImage(recipe:Recipe(image: "food1", title: "asdasd", chef: Chef(name: "asdas", image: "food1", location: "asdad"), rating: 4, createdAt: .now, category: "asd", isPopular: false, prepareTime: 20, ingridents: [Ingrident(image: "food1", name: "asdasd", amount: 300)], procedures: [Procedure(description: "adasd")], comment: "znfkajsfnkajsfbnkjasfhkajsfasjkf"))
-                 
+    SaveDetailImage(recipe: Recipe(
+            image: "food1",
+            title: "Traditional Spare Ribs Baked",
+            chef: Chef(name: "Laura Wilson", image: "food1", location: "Los Angeles, CA"),
+            rating: 4,
+            createdAt: .now,
+            category: "Cereal",
+            isPopular: true,
+            prepareTime: 20,
+            ingridents: [
+                Ingrident(image: "food1", name: "Strawberries", amount: 200),
+                Ingrident(image: "food2", name: "Milk", amount: 200)
+            ],
+            procedures: [
+                Procedure(description: "Combine all ingredients in a blender and blend until smooth."),
+                Procedure(description: "Serve immediately and enjoy!")
+            ],
+            comment: "A delicious and refreshing smoothie perfect for breakfast or a snack."
+        ))
 }
 
